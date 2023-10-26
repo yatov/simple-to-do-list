@@ -1,0 +1,46 @@
+$main-bg-color: #f4f4f4;
+$list-item-bg-color: #fff;
+$delete-button-bg-color: #f44336;
+$delete-button-text-color: #fff;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $main-bg-color;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: $list-item-bg-color;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .delete {
+    background-color: $delete-button-bg-color;
+    color: $delete-button-text-color;
+  }
+}
+
+.input__field {
+    display: flex;
+    > div {
+        width: 100%;
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
+}
